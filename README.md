@@ -1,24 +1,48 @@
-import pygame
+# Dino AI - Training a Neural Network to Play the Dinosaur Game
 
-pygame.init()
+This repository contains an environment developed in **Pygame** to simulate the dinosaur game and train a **neural network** to play it automatically. The AI training will be done using **TensorFlow**, utilizing either reinforcement learning or supervised learning.
 
-size = width, height = 640, 480
+## 📌 Objective
+Create an intelligent agent that learns to play the dinosaur game, jumping over obstacles at the right time to maximize its score.
 
-game_display = pygame.display.set_mode(size)
-running = True
+## 🚀 Technologies Used
+- **Python** 🐍
+- **Pygame** (for game environment simulation) 🎮
+- **TensorFlow/Keras** (for building and training the neural network) 🧠
+- **NumPy and Pandas** (for data manipulation) 📊
 
-altura_chao = height-100
-preto = 0,0,0
-branco = 255, 255, 255
-xPos = 0
-yPos = 0
-while running:
-    for event in pygame.event.get():    
-        if event.type == pygame.QUIT:
-            pygame.quit()
-            running = False
-    pygame.draw.rect(game_display, branco, [30,30,40,50])
-    
-    pygame.display.update()
+## 🔧 Project Structure
+```
+📂 dino-ai
+│── 📝 README.md
+│── 📄 dino_game.py  # Game code
+│── 📄 train_ai.py   # AI training code
+│── 📄 model.h5      # Trained model (when available)
+│── 📂 assets        # Game sprites and images (if any)
+```
 
-           
+## 📖 How to Run the Project
+1. **Install dependencies**:
+   ```bash
+   pip install pygame tensorflow numpy pandas
+   ```
+2. **Run the game manually**:
+   ```bash
+   python dino_game.py
+   ```
+3. **Train the AI**:
+   ```bash
+   python train_ai.py
+   ```
+4. **Test the AI playing**:
+   ```bash
+   python dino_game.py --ai
+   ```
+
+## 🏗️ Next Steps
+- Implement an agent using **reinforcement learning (Deep Q-Learning)**
+- Improve training efficiency
+- Add graphs to visualize AI progress
+
+Feel free to contribute! 🚀
+
