@@ -16,7 +16,7 @@ Create an intelligent agent that learns to play the dinosaur game, jumping over 
 📂 dino-ai
 │── 📝 README.md
 │── 📄 dino_game.py  # Game code
-│── 📄 train_ai.py   # AI training code
+│── 📄 train_ai.py   # AI training code (when available)
 │── 📄 model.h5      # Trained model (when available)
 │── 📂 assets        # Game sprites and images (if any)
 ```
