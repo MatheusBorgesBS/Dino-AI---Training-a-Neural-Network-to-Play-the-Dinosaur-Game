@@ -1,4 +1,4 @@
-# Dino AI - Training a Neural Network to Play the Dinosaur Game
+# Dino AI - Training a Neural Network to Play the Dinosaur Game (Still Working)
 
 This repository contains an environment developed in **Pygame** to simulate the dinosaur game and train a **neural network** to play it automatically. The AI training will be done using **TensorFlow**, utilizing either reinforcement learning or supervised learning.
 
